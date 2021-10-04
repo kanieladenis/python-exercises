@@ -3,7 +3,7 @@
 price_per_day = 3
 days_rented = [3,5,1]
 
-total_price = x * price_per_day for x in days_rented
+total_price = sum(x * price_per_day for x in days_rented)
 
 
 # Suppose you're working as a contractor for 3 companies: Google, Amazon and Facebook, they pay you a different rate per hour. Google pays 400 dollars per hour, Amazon 380, and Facebook 350. How much will you receive in payment for this week? You worked 10 hours for Facebook, 6 hours for Google and 4 hours for Amazon.
