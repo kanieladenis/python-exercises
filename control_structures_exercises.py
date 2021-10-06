@@ -116,6 +116,7 @@ print(f'Number to skip is: {user_number}\n\n')
 for number in range(1, int(user_number) + 1):
     if number % 2 != 0:
         if number == int(user_number):
+            print('Yikes! Skip this number')
             continue
         print(f'Here is an odd number: {number}')
         
