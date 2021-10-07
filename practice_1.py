@@ -1,15 +1,9 @@
-def handle_commas(s):
-    if ',' in s:
-        output = s.replace(',', '')
-        if output.isdigit():
-            print(output)
-            return output
-        else:
-            print('input not digit')
-    elif s.isdigit():
-        print(s)
-        return s
-    else:
-        print('invalid')
+import datetime
+
+def twelveto24(s):
+    twelve_hr_format = '%-I:%M%p'
+    twentyfour_hr_format = '%H:%M'
+    s.strftime(twentyfour_hr_format)
+    print(s)
     
-handle_commas('1,23a')
+twelveto24('10:10am')
